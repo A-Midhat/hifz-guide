@@ -65,13 +65,13 @@ body {
     align-items: center;
     gap: 5px;
   }
-/* Add custom styling for the hr element */
+
   .breakLine {
-  border: none; /* Remove default border */
-  height: 1px; /* Set the height to 2px */
-  background-color: #b8860b; /* Set the background color to a shade of gold */
-  width: 20%; /* Set the width to 50% */
-  margin: 20px auto; /* Center the hr element and add some spacing */
+  border: none; 
+  height: 1px; 
+  background-color: #b8860b; 
+  width: 20%; 
+  margin: 20px auto; 
 }
   .footer > p {
     position: relative;
@@ -82,13 +82,7 @@ body {
     color: #926e27;
 
   }
-  /*
-  h1 {
-    font-size: 100px;
-    letter-spacing: 5px;
-    text-shadow: 4px 6px 8px rgba(0, 0, 0, 0.9);
-  }
-  */
+
   .mainCard {
     background-color: #dbcbbd;
     border: 2px solid gold;
@@ -114,12 +108,7 @@ body {
     color: #c87941;
     
   }
-  /*
-  .container {
-    display: grid;
-    grid-template-columns: auto auto;
-  }
-  */
+
   .single {
     grid-column: 1 / 3;
   }
@@ -128,7 +117,7 @@ body {
     grid-row: span 2;
   }
   
-  .planCard, .profileCard {
+  .planCard, .profileCard, .login-container, .signup-container {
     background-color: #290001;
     border: 2px solid gold;
     border-radius: 10px;
@@ -227,4 +216,58 @@ body {
   line-height: 1.6;
   font-size: 1.1rem;
   margin-left: 20px;
+}
+
+/* signup page*/
+.form-group {
+  margin: 20px;
+}
+.form-group > input {
+  max-width: 500px;
+  min-width: 250px;
+  padding: 10px;
+  border: 1px solid #dbcbbd;
+  border-radius: 8px;
+  background-color: #290001;
+  color: #dbcbbd;
+  font-size: 1.0rem;
+}
+
+.form-group > input::placeholder {
+  text-align: center;
+  color: rgba(70, 56, 45,0.8);
+  font-style: italic;  
+}
+
+/* Add media queries for responsiveness */
+
+/* Add media queries for responsiveness */
+@media only screen and (max-width: 500px) { /*most phones < 500px*/
+  body {
+    font-size: 14px; 
+  }
+  header .header-content > ul {
+    flex-direction: column; 
+  }
+  .mainCard, .planCard, .profileCard, .login-container, .signup-container {
+    margin: 15px;
+  }
+  .planContentHeader {
+    flex-direction: column;
+    gap: 2px; 
+  }
+  .planContent {
+    grid-template-columns: 1fr; 
+    
+  }
+  .counter {
+    padding: 30px; 
+  }
+  .aboutUs > p,
+  .howToUse > ol {
+    font-size: 1rem; 
+  }
+  .footer > p {
+    font-size: 0.8rem; 
+  }
 }

@@ -17,12 +17,12 @@ export default function PlanCard(){
                 </div>
                 <hr/>
                 <div className="planContent">
-                    <PlanContentRow text="yesterday side five times" />
+                    <PlanContentRow text="Yesterday side five times" />
                     <PlanContentRow text="Listen three times" />
                     <PlanContentRow text="Read tafseer" />
-                    <PlanContentRow text="Tikrar 40 times" />
-                    <PlanContentRow text="rabt" />
-                    <PlanContentRow text="revsion"/>  
+                    <PlanContentRow text="Repeat 40 times" />
+                    <PlanContentRow text="Rabt" />
+                    <PlanContentRow text="Revsion"/>  
                 </div>
             </div>
         </>
